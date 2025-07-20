@@ -1,36 +1,20 @@
-import prisma from 'lib/prisma'
-
 export default async function handler(req, res) {
   try {
     const slug = req.query.slug.toString()
 
     if (req.method === 'POST') {
-      const newOrUpdatedViews = await prisma.views.upsert({
-        where: { slug },
-        create: {
-          slug,
-        },
-        update: {
-          count: {
-            increment: 1,
-          },
-        },
-      })
-
+      // Without a database, just return a dummy increment
       return res.status(200).json({
-        total: newOrUpdatedViews.count.toString(),
+        total: '1',
       })
     }
 
     if (req.method === 'GET') {
-      const views = await prisma.views.findUnique({
-        where: {
-          slug,
-        },
-      })
-
-      return res.status(200).json({ total: views?.count?.toString?.() || 0 })
+      // Without a database, return dummy count as 0
+      return res.status(200).json({ total: '0' })
     }
+
+    return res.status(405).json({ message: 'Method not allowed' })
   } catch (e) {
     return res.status(500).json({ message: e.message })
   }
