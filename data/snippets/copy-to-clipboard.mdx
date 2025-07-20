@@ -1,0 +1,36 @@
+---
+title: Copy to Clipboard
+date: '2025-07-15'
+tags: [javascript, web]
+draft: false
+summary: Quickly copy any text to clipboard using JavaScript
+images: []
+layout: PostSimple
+---
+
+```js showLineNumbers
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    // fallback for older browsers
+    var textArea = document.createElement('textarea')
+    textArea.value = text
+    document.body.appendChild(textArea)
+    textArea.focus()
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+    console.log('Copied using fallback method')
+    return
+  }
+  navigator.clipboard.writeText(text).then(
+    function () {
+      console.log('Text copied to clipboard')
+    },
+    function (err) {
+      console.error('Could not copy text: ', err)
+    }
+  )
+}
+
+// Example usage:
+copyTextToClipboard('Hello World!')

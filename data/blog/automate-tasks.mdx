@@ -1,0 +1,98 @@
+---
+title: Automate Your Daily Tasks with Python Scripts
+date: '2025-07-15'
+tags: [python, automation, productivity]
+draft: false
+summary: Boost your productivity by automating repetitive tasks using simple Python scripts.
+---
+
+In this blog, we will explore how to automate simple daily tasks with Python, making your workflow faster and error-free.
+
+# Why Automate?
+
+<hr />
+
+Automation saves time, reduces human error, and lets you focus on high-value tasks. With Python’s powerful libraries, automating small repetitive tasks becomes very straightforward.
+
+<br />
+
+# Example 1: Rename Multiple Files
+
+<hr />
+
+Suppose you have a folder with hundreds of files that you want to rename systematically. Here’s how to do it:
+
+```python
+import os
+
+folder_path = 'path_to_folder'
+
+for count, filename in enumerate(os.listdir(folder_path)):
+    dst = f"file_{str(count)}.jpg"  # rename logic here
+    src = os.path.join(folder_path, filename)
+    dst = os.path.join(folder_path, dst)
+    
+    os.rename(src, dst)
+
+print("Files renamed successfully.")
+````
+
+Replace `path_to_folder` with your directory path. This will rename files as `file_0.jpg`, `file_1.jpg`, etc.
+
+<br />
+
+# Example 2: Sending Emails Automatically
+
+<hr />
+
+You can send automated emails using Python’s `smtplib`. Example:
+
+```python
+import smtplib
+
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+
+server.login('your_email@gmail.com', 'your_password')
+server.sendmail('your_email@gmail.com', 'receiver_email@gmail.com', 'This is an automated email from Python.')
+
+server.quit()
+```
+
+**Note:** For Gmail, enable *less secure app access* or use *app passwords* for security.
+
+<br />
+
+# Example 3: Convert Multiple Images to PDF
+
+<hr />
+
+Convert all images in a folder into a single PDF file:
+
+```python
+from PIL import Image
+import os
+
+folder = 'images_folder'
+images = []
+
+for file in os.listdir(folder):
+    if file.endswith('.jpg') or file.endswith('.png'):
+        img = Image.open(os.path.join(folder, file)).convert('RGB')
+        images.append(img)
+
+images[0].save('output.pdf', save_all=True, append_images=images[1:])
+print("PDF created successfully.")
+```
+
+Change `'images_folder'` to your folder containing images.
+
+<br />
+
+# Final Thoughts
+
+<hr />
+
+Python automation scripts can simplify your life. Start with **simple file operations and emails**, then move towards **web scraping, API automation, and real-time data pipelines** as your skills grow.
+
+---
