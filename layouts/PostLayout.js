@@ -20,7 +20,7 @@ import { SocialIcon } from 'react-social-icons'
 import { HiOutlinePencil, HiOutlineClock, HiOutlineEye } from 'react-icons/hi'
 import { BsCalendarDate } from 'react-icons/bs'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/main/data/blog/${fileName}`
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
