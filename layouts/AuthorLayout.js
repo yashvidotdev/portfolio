@@ -68,7 +68,8 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
               >
                 {/* {text1} Currently, I am focused on building data pipelines and automating them at{' '} */}
-                 {text1} Currently, I am focused on learning AI and Data Science concepts while working on projects involving Python, automation, and data.
+                {text1} Currently, I am focused on learning AI and Data Science concepts while
+                working on projects involving Python, automation, and data.
                 <Link
                   href={'https://www.accenture.com/in-en'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
@@ -89,11 +90,9 @@ export default function AuthorLayout({ children, frontMatter }) {
             </p>
             <br />
             <p className="sm:block md:hidden lg:hidden">
-              I am always eager to learn new things and expand my knowledge. Currently, I am working on projects related to
-              <span className="font-semibold">
-                {' '}
-                Deep Learning and Edge Computing.{' '}
-              </span>
+              I am always eager to learn new things and expand my knowledge. Currently, I am working
+              on projects related to
+              <span className="font-semibold"> Deep Learning and Edge Computing. </span>
               At the same time I am{' '}
               <RoughNotation
                 type="underline"
@@ -103,11 +102,13 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                actively looking for internships or full-time opportunities in the field of Data Science and AI.
+                actively looking for internships or full-time opportunities in the field of Data
+                Science and AI.
               </RoughNotation>
             </p>
             <p className="hidden md:block">
-                 I am always eager to learn new things and expand my knowledge. Currently, I am working on projects related to{' '}
+              I am always eager to learn new things and expand my knowledge. Currently, I am working
+              on projects related to{' '}
               <RoughNotation
                 animationDelay="1000"
                 animationDuration="3000"
@@ -130,11 +131,13 @@ export default function AuthorLayout({ children, frontMatter }) {
                 multiline={true}
               >
                 actively looking for internships or full-time opportunities in the field of Data Science and AI.
-              </RoughNotation>
+               </RoughNotation>
             </p>
             <br />
             <p>
-              I enjoy collaborating on meaningful projects and exploring open-source contributions whenever possible. If you would like to connect or discuss ideas, feel free to reach out to me via{' '}
+              I enjoy collaborating on meaningful projects and exploring open-source contributions
+              whenever possible. If you would like to connect or discuss ideas, feel free to reach
+              out to me via{' '}
               <Link
                 href={'mailto:yashu.shah28@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"

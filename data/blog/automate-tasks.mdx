@@ -31,11 +31,11 @@ for count, filename in enumerate(os.listdir(folder_path)):
     dst = f"file_{str(count)}.jpg"  # rename logic here
     src = os.path.join(folder_path, filename)
     dst = os.path.join(folder_path, dst)
-    
+
     os.rename(src, dst)
 
 print("Files renamed successfully.")
-````
+```
 
 Replace `path_to_folder` with your directory path. This will rename files as `file_0.jpg`, `file_1.jpg`, etc.
 
@@ -59,7 +59,7 @@ server.sendmail('your_email@gmail.com', 'receiver_email@gmail.com', 'This is an 
 server.quit()
 ```
 
-**Note:** For Gmail, enable *less secure app access* or use *app passwords* for security.
+**Note:** For Gmail, enable _less secure app access_ or use _app passwords_ for security.
 
 <br />
 

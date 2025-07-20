@@ -65,25 +65,25 @@ const usesData = [
     href: 'https://www.notion.so/',
   },
   {
-  title: 'KeePassXC',
-  description: `Secure password manager for storing all credentials`,
-  href: 'https://keepassxc.org/',
-},
-{
-  title: 'OBS Studio',
-  description: `For screen recording and streaming tutorials or demos`,
-  href: 'https://obsproject.com/',
-},
-{
-  title: 'ShareX',
-  description: `Powerful screen capture and annotation tool for Windows`,
-  href: 'https://getsharex.com/',
-},
-{
-  title: 'PowerToys',
-  description: `Extra utilities to boost Windows productivity`,
-  href: 'https://learn.microsoft.com/en-us/windows/powertoys/',
-},
+    title: 'KeePassXC',
+    description: `Secure password manager for storing all credentials`,
+    href: 'https://keepassxc.org/',
+  },
+  {
+    title: 'OBS Studio',
+    description: `For screen recording and streaming tutorials or demos`,
+    href: 'https://obsproject.com/',
+  },
+  {
+    title: 'ShareX',
+    description: `Powerful screen capture and annotation tool for Windows`,
+    href: 'https://getsharex.com/',
+  },
+  {
+    title: 'PowerToys',
+    description: `Extra utilities to boost Windows productivity`,
+    href: 'https://learn.microsoft.com/en-us/windows/powertoys/',
+  },
 ]
 
 export default usesData

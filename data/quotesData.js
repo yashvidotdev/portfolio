@@ -1,5 +1,5 @@
 export const quotes = [
-    {
+  {
     author: 'Mark Zuckerberg',
     quote: `The biggest risk is not taking any risk.`,
   },

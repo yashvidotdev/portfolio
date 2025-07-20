@@ -2,7 +2,9 @@
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
 }
 
 .background-author-animate {
@@ -49,7 +51,9 @@ input:-webkit-autofill:focus {
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #de1d8d, 0 0 5px #de1d8d;
+  box-shadow:
+    0 0 10px #de1d8d,
+    0 0 5px #de1d8d;
   opacity: 1;
 
   -webkit-transform: rotate(3deg) translate(0px, -4px);
@@ -119,7 +123,8 @@ input:-webkit-autofill:focus {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
+  background:
+    linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
   transition: width 0.25s ease;
   -webkit-transition: width 0.25s ease;
 }
@@ -127,7 +132,8 @@ input:-webkit-autofill:focus {
 .link-underline:hover:after {
   width: 100%;
   left: 0;
-  background: linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
+  background:
+    linear-gradient(transparent, transparent), linear-gradient(to right, #d946ef, #ec4899);
 }
 
 .pushable {

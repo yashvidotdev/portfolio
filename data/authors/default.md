@@ -2,7 +2,7 @@
 name: Yashvi Shah
 avatar: /static/images/avatar.png
 occupation: Data Scientist
-company: 
+company:
 email: yashu.shah28@gmail.com
 twitter: https://twitter.com/yashvidotdev
 linkedin: https://www.linkedin.com/in/yashvidotdev/

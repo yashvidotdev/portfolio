@@ -18,10 +18,11 @@ This script resizes all images in a folder to a specified width and height using
 
 Install required package:
 
-````bash
+```bash
 pip install pillow
-````
-````python
+```
+
+```python
 from PIL import Image
 import os
 
@@ -40,3 +41,4 @@ for filename in os.listdir(input_folder):
 
 print(f"All images resized to {new_size} and saved to '{output_folder}' folder.")
 
+```

@@ -20,12 +20,11 @@ const experienceData = [
     url: 'https://yesbhautikx.co.in',
     text1:
       'Led backend development using Express.js, improving system performance by 40% through optimised database queries and APIs.',
-    text2:
-      'Developed custom themes and elements enhancing functionality and user experience.',
+    text2: 'Developed custom themes and elements enhancing functionality and user experience.',
     text3:
       'Collaborated with frontend developers to integrate APIs seamlessly and deliver features within tight deadlines.',
   },
-   {
+  {
     title: 'Web Developer',
     company: 'Yesbhautik Tech Services Pvt Ltd',
     location: 'Ahmedabad, India',
