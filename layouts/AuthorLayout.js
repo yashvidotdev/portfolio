@@ -130,8 +130,9 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                actively looking for internships or full-time opportunities in the field of Data Science and AI.
-               </RoughNotation>
+                actively looking for internships or full-time opportunities in the field of Data
+                Science and AI.
+              </RoughNotation>
             </p>
             <br />
             <p>
