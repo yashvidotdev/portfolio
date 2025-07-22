@@ -53,10 +53,12 @@ const defaultTheme = {
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
   useEffect(() => {
-    const url = new URL(window.location)
-    if (url.searchParams.has('fbclid')) {
-      url.searchParams.delete('fbclid')
-      window.history.replaceState({}, document.title, url.pathname + url.search)
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location)
+      if (url.searchParams.has('fbclid')) {
+        url.searchParams.delete('fbclid')
+        window.history.replaceState({}, document.title, url.pathname + url.search)
+      }
     }
   }, [])
   return (
