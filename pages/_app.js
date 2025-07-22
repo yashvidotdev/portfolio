@@ -15,6 +15,7 @@ import ProgressBar from 'react-scroll-progress-bar'
 import ScrollTop from '@/components/ScrollTop'
 import { SessionProvider } from 'next-auth/react'
 import { Provider } from '@lyket/react'
+import { useEffect } from 'react'
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
@@ -51,6 +52,13 @@ const defaultTheme = {
 }
 
 export default function App({ Component, pageProps: { session, ...pageProps } }) {
+    useEffect(() => {
+    const url = new URL(window.location);
+    if (url.searchParams.has('fbclid')) {
+      url.searchParams.delete('fbclid');
+      window.history.replaceState({}, document.title, url.pathname + url.search);
+    }
+  }, []);
   return (
     <SessionProvider session={session}>
       <Provider apiKey="pt_7c8b6840f5ba39cd3b2b471cd8efc2" theme={defaultTheme}>
