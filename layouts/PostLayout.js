@@ -62,11 +62,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                   <HiOutlineClock className="h-5 w-5" />
                   {readingTime.text}
                 </span>
-                <span className="flex items-center gap-1.5">
+                {/* <span className="flex items-center gap-1.5">
                   <HiOutlineEye className="h-5 w-5" />
                   <ViewCounter className="ml-0" slug={slug} blogPage={true} />
                   <div className="-ml-0.5">Views</div>
-                </span>
+                </span> */}
               </div>
             </div>
           </header>
